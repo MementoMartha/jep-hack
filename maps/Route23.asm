@@ -3,6 +3,15 @@ Route23_MapScripts:
 
 	def_callbacks
 
+VictoryRoadSign:
+	jumptext VictoryRoadSignText
+
+VictoryRoadSignText:
+	text "VICTORY ROAD GATE"
+	line "- #MON LEAGUE"
+	done
+
+
 Route23_MapEvents:
 	db 0, 0 ; filler
 
@@ -15,5 +24,6 @@ Route23_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 3,  33, BGEVENT_READ, VictoryRoadSign
 
 	def_object_events
