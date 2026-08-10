@@ -349,14 +349,15 @@ ENDM
 	endgroup
 
 	newgroup INDIGO                                               ; 16
-	map_const ROUTE_23,                                    10,  9 ;  1
-	map_const INDIGO_PLATEAU_POKECENTER_1F,                 9,  7 ;  2
-	map_const WILLS_ROOM,                                   5,  9 ;  3
-	map_const KOGAS_ROOM,                                   5,  9 ;  4
-	map_const BRUNOS_ROOM,                                  5,  9 ;  5
-	map_const KARENS_ROOM,                                  5,  9 ;  6
-	map_const LANCES_ROOM,                                  5, 12 ;  7
-	map_const HALL_OF_FAME,                                 5,  7 ;  8
+	map_const ROUTE_23,                                    10, 72 ;  1
+	map_const INDIGO_PLATEAU,                              10,  9 ;  2
+	map_const INDIGO_PLATEAU_POKECENTER_1F,                 9,  7 ;  3
+	map_const WILLS_ROOM,                                   5,  9 ;  4
+	map_const KOGAS_ROOM,                                   5,  9 ;  5
+	map_const BRUNOS_ROOM,                                  5,  9 ;  6
+	map_const KARENS_ROOM,                                  5,  9 ;  7
+	map_const LANCES_ROOM,                                  5, 12 ;  8
+	map_const HALL_OF_FAME,                                 5,  7 ;  9
 	endgroup
 
 	newgroup FUCHSIA                                              ; 17

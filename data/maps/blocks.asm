@@ -1361,3 +1361,6 @@ RuddyTownBigHouse2_Blocks:
 SavoyCityRocketBlockedHouse_Blocks:
 CoralCityOakHouse_Blocks:
 	INCBIN "maps/SavoyCityRocketBlockedHouse.ablk"
+	
+IndigoPlateau_Blocks:
+	INCBIN "maps/IndigoPlateau.ablk"

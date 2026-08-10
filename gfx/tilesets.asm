@@ -695,3 +695,14 @@ INCLUDE "data/tilesets/ship_deck_collision.asm"
 TilesetShipDeckAttr::
 INCBIN "data/tilesets/ship_deck_attributes.bin"
 
+TilesetPlateauGFX::
+INCBIN "gfx/tilesets/plateau.2bpp.lz"
+
+TilesetPlateauMeta::
+INCBIN "data/tilesets/plateau_metatiles.bin"
+
+TilesetPlateauColl::
+INCLUDE "data/tilesets/plateau_collision.asm"
+
+TilesetPlateauAttr::
+INCBIN "data/tilesets/plateau_attributes.bin"

@@ -413,7 +413,7 @@ DebugRoom_MapEvents:
 	warp_event 11, 15, LAKE_OF_RAGE, 3
 	warp_event 27,  5, SILVER_CAVE_ROOM_2,  1 ; test strong arm
 	warp_event 15,  2, GOLDENROD_CITY, 1 ; city warp
-	warp_event  4,  9, SUMMER_BEACH_HOUSE, 1 ; left lab/league warp
+	warp_event  4,  9, INDIGO_PLATEAU, 1 ; left lab/league warp
 	warp_event  5,  9, BLUE_FOREST, 1 ; right lab/league warp
 	warp_event 35, 17, SUNGLOW_CITY, 1 ; east warp
 	warp_event  5, 35, LAVENDER_TOWN, 1 ; southwest warp
