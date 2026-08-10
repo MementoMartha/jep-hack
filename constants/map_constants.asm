@@ -344,7 +344,7 @@ ENDM
 	map_const MOUNT_MOON_SQUARE,                           15,  9 ; 10
 	map_const MOUNT_MOON_GIFT_SHOP,                         4,  4 ; 11
 	map_const TIN_TOWER_ROOF,                              10,  9 ; 12
-	map_const MT_MOON_CRATER,							   10, 10 ; 13
+	map_const MT_MOON_CRATER,							   25, 25 ; 13
 	map_const MT_MOON_CRATER_DEPTHS,					   10, 10 ; 14
 	endgroup
 
