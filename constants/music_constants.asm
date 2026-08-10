@@ -130,6 +130,7 @@
 	const MUSIC_FOURISLAND					 ; 7d
 	const MUSIC_SIXISLAND					 ; 7e
 	const MUSIC_STADIUM2TEAMSELECT			 ; 7f
+	const MUSIC_MTMOONCRATER				 ; 80			We are into the 80s now WOOOHOOO
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for these values (see home/map.asm)

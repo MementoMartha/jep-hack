@@ -5,6 +5,7 @@ Drumkits:
 	dw Drumkit3
 	dw Drumkit4
 	dw Drumkit5
+	dw FunkDrums
 
 Drumkit0:
 	dw Drum00
@@ -90,6 +91,20 @@ Drumkit5:
 	dw Snare14
 	dw Snare13
 	dw Kick2
+FunkDrums:
+	dw Drum00
+	dw FunkyCrash
+	dw A0Snare
+	dw A0Snare2
+	dw A0Kick
+	dw A0Kick2
+	dw FunkyCrash
+	dw LoTom
+	dw HiHat1
+	dw Drum00
+	dw SmoothKick
+	dw A0Snare3
+	dw Snare2
 
 Drum00:
 	noise_note 32, 1, 1, 0
@@ -179,10 +194,6 @@ Snare11:
 	noise_note 32, 6, 1, 34
 	sound_ret
 
-Drum20:
-	noise_note 32, 1, 1, 17
-	sound_ret
-
 Drum21:
 	sound_ret
 
@@ -207,6 +218,10 @@ Triangle5:
 	noise_note 48, 9, 1, 24
 	sound_ret
 
+Drum20:
+	noise_note 32, 1, 1, 17
+	sound_ret
+
 Drum27:
 	noise_note 39, 9, 2, 16
 	sound_ret
@@ -221,9 +236,22 @@ Drum29:
 	noise_note 51, 1, 1, 0
 	sound_ret
 
-Crash1:
-	noise_note 51, 8, 8, 21
-	noise_note 32, 6, 5, 18
+Kick2:
+	noise_note 32, 10, 8, 107
+	noise_note 32, 7, 1, 0
+	sound_ret
+
+Crash2:
+	noise_note 32, 8, 4, 18
+	sound_ret
+
+Drum33:
+	noise_note 32, 10, 1, 49
+	sound_ret
+
+Drum35:
+	noise_note 51, 8, 1, 0
+	noise_note 51, 1, 1, 0
 	sound_ret
 
 Drum31:
@@ -236,25 +264,52 @@ Drum32:
 	noise_note 51, 1, 1, 17
 	sound_ret
 
-Drum33:
-	noise_note 32, 10, 1, 49
-	sound_ret
-
-Crash2:
-	noise_note 32, 8, 4, 18
-	sound_ret
-
-Drum35:
-	noise_note 51, 8, 1, 0
-	noise_note 51, 1, 1, 0
-	sound_ret
-
 Drum36:
 	noise_note 51, 8, 1, 33
 	noise_note 51, 1, 1, 17
 	sound_ret
 
-Kick2:
-	noise_note 32, 10, 8, 107
-	noise_note 32, 7, 1, 0
+Crash1:
+	noise_note 51, 8, 8, 21
+	noise_note 32, 6, 5, 18
+	sound_ret
+
+FunkyCrash:
+	noise_note 75, 4, 7, 34
+	noise_note 50, 2, 7, 7
+	noise_note 50, 3, 7, 33
+	sound_ret
+
+A0Snare:
+	noise_note 32, 10, 1, 50
+	noise_note 32, 6, 7, 50
+	sound_ret
+
+A0Snare2:
+	noise_note 32, 3, 2, 50
+	noise_note 32, 2, 7, 50
+	sound_ret
+
+A0Snare3:
+	noise_note 32, 7, 1, 50
+	noise_note 32, 4, 7, 50
+	sound_ret
+
+A0Kick:
+	noise_note 16, 15, 7, 138
+	noise_note 32, 9, 4, 169
+	sound_ret
+
+A0Kick2:
+	noise_note 16, 6, 7, 138
+	noise_note 32, 5, 3, 169
+	sound_ret
+
+LoTom:
+	noise_note 50, 7, 1, 131
+	sound_ret
+
+SmoothKick:
+	noise_note 32, 7, 3, 139
+	noise_note 32, 3, 2, 0
 	sound_ret
