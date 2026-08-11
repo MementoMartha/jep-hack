@@ -9,6 +9,8 @@ CitrineCity_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event 26, 31, DEBUG_ROOM, 1
+	warp_event 27, 31, DEBUG_ROOM, 1
 
 	def_coord_events
 

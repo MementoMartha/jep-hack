@@ -706,3 +706,17 @@ INCLUDE "data/tilesets/plateau_collision.asm"
 
 TilesetPlateauAttr::
 INCBIN "data/tilesets/plateau_attributes.bin"
+
+SECTION "Tileset Data 19", ROMX
+
+TilesetCitrineGFX::
+INCBIN "gfx/tilesets/citrine.2bpp.lz"
+
+TilesetCitrineMeta::
+INCBIN "data/tilesets/citrine_metatiles.bin"
+
+TilesetCitrineColl::
+INCLUDE "data/tilesets/citrine_collision.asm"
+
+TilesetCitrineAttr::
+INCBIN "data/tilesets/citrine_attributes.bin"

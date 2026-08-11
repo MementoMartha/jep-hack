@@ -271,26 +271,26 @@ SaffronCity_MapEvents:
 	warp_event 34,  3, SAFFRON_GYM, 1
 	warp_event 25, 11, SAFFRON_MART, 2
 	warp_event  9, 29, SAFFRON_POKECENTER_1F, 1
-	warp_event 27, 29, MR_PSYCHICS_HOUSE, 1
+	warp_event 29, 29, MR_PSYCHICS_HOUSE, 1
 	warp_event  8,  3, SAFFRON_MAGNET_TRAIN_STATION, 2
 	warp_event 18, 21, SILPH_CO_1F, 1
 	warp_event  9, 11, COPYCATS_HOUSE_1F, 1
 	warp_event 18,  3, ROUTE_5_SAFFRON_GATE, 3
-	warp_event  0, 24, ROUTE_7_SAFFRON_GATE, 3
-	warp_event  0, 25, ROUTE_7_SAFFRON_GATE, 4
+	warp_event  0, 18, ROUTE_7_SAFFRON_GATE, 3
+	warp_event  0, 19, ROUTE_7_SAFFRON_GATE, 4
 	warp_event 16, 33, ROUTE_6_SAFFRON_GATE, 1
 	warp_event 17, 33, ROUTE_6_SAFFRON_GATE, 2
-	warp_event 39, 22, ROUTE_8_SAFFRON_GATE, 1
-	warp_event 39, 23, ROUTE_8_SAFFRON_GATE, 2
+	warp_event 39, 18, ROUTE_8_SAFFRON_GATE, 1
+	warp_event 39, 19, ROUTE_8_SAFFRON_GATE, 2
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 21,  5, BGEVENT_READ, SaffronCitySign
-	bg_event 33,  5, BGEVENT_READ, SaffronGymSign
-	bg_event 25,  5, BGEVENT_READ, FightingDojoSign
+	bg_event 17,  5, BGEVENT_READ, SaffronCitySign
+	bg_event 35,  5, BGEVENT_READ, SaffronGymSign
+	bg_event 27,  5, BGEVENT_READ, FightingDojoSign
 	bg_event 15, 21, BGEVENT_READ, SilphCoSign
-	bg_event 25, 29, BGEVENT_READ, MrPsychicsHouseSign
+	bg_event 27, 29, BGEVENT_READ, MrPsychicsHouseSign
 	bg_event 11,  5, BGEVENT_READ, SaffronCityMagnetTrainStationSign
 	bg_event 10, 29, BGEVENT_READ, SaffronCityPokecenterSign
 	bg_event 26, 11, BGEVENT_READ, SaffronCityMartSign

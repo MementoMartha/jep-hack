@@ -68,4 +68,5 @@ Tilesets::
 	tileset TilesetNihonPowerPlant
 	tileset TilesetShipDeck
 	tileset TilesetPlateau
+	tileset TilesetCitrine
 	assert_table_length NUM_TILESETS + 1

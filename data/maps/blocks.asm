@@ -1160,33 +1160,6 @@ NavalRockB1F_Blocks:
 NavalRock2F_Blocks:
 	INCBIN "maps/NavalRock2F.ablk"
 
-CitrineCity_Blocks:
-	INCBIN "maps/CitrineCity.ablk"
-
-BrunswickTrail_Blocks:
-	INCBIN "maps/BrunswickTrail.ablk"
-
-BrunswickGlade_Blocks:
-	INCBIN "maps/BrunswickGlade.ablk"
-
-BrunswickGrotto_Blocks:
-	INCBIN "maps/BrunswickGrotto.ablk"
-
-GarnetCavern1F_Blocks:
-	INCBIN "maps/GarnetCavern1F.ablk"
-
-GarnetCavernB1F_Blocks:
-	INCBIN "maps/GarnetCavernB1F.ablk"
-
-GarnetCavern2F_Blocks:
-	INCBIN "maps/GarnetCavern2F.ablk"
-
-CelesteHill_Blocks:
-	INCBIN "maps/CelesteHill.ablk"
-
-CelesteHillCave_Blocks:
-	INCBIN "maps/CelesteHillCave.ablk"
-
 AlteringCave_Blocks:
 	INCBIN "maps/AlteringCave.ablk"
 
@@ -1364,3 +1337,30 @@ CoralCityOakHouse_Blocks:
 	
 IndigoPlateau_Blocks:
 	INCBIN "maps/IndigoPlateau.ablk"
+	
+CitrineCity_Blocks:
+	INCBIN "maps/CitrineCity.ablk"
+
+BrunswickTrail_Blocks:
+	INCBIN "maps/BrunswickTrail.ablk"
+
+BrunswickGlade_Blocks:
+	INCBIN "maps/BrunswickGlade.ablk"
+
+BrunswickGrotto_Blocks:
+	INCBIN "maps/BrunswickGrotto.ablk"
+
+GarnetCavern1F_Blocks:
+	INCBIN "maps/GarnetCavern1F.ablk"
+
+GarnetCavernB1F_Blocks:
+	INCBIN "maps/GarnetCavernB1F.ablk"
+
+GarnetCavern2F_Blocks:
+	INCBIN "maps/GarnetCavern2F.ablk"
+
+CelesteHill_Blocks:
+	INCBIN "maps/CelesteHill.ablk"
+
+CelesteHillCave_Blocks:
+	INCBIN "maps/CelesteHillCave.ablk"

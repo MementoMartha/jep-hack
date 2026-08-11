@@ -552,8 +552,8 @@ ENDM
 	
 	newgroup CITRINE ; 27
 	; This doesn't have all the maps, just the bones
-	map_const CITRINE_CITY,						10, 10 ; 1
-	map_const BRUNSWICK_TRAIL,				10, 10 ; 2
+	map_const CITRINE_CITY,					20, 18 ; 1
+	map_const BRUNSWICK_TRAIL,				32, 14 ; 2
 	map_const BRUNSWICK_GLADE,				10, 10 ; 3
 	map_const BRUNSWICK_GROTTO,				10, 10 ; 4
 	map_const GARNET_CAVERN_1F,				10, 10 ; 5

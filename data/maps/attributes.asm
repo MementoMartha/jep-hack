@@ -746,8 +746,12 @@ ENDM
 	map_attributes HauntedHouse2F, HAUNTED_HOUSE_2F, $00, 0
 	
 	; Citrine City Maps
-	map_attributes CitrineCity, CITRINE_CITY, $00, 0 ; Bank 2
-	map_attributes BrunswickTrail, BRUNSWICK_TRAIL, $00, 0 ; Bank 2
+	map_attributes CitrineCity, CITRINE_CITY, $43, SOUTH ; Bank 2
+	connection south, BrunswickTrail, BRUNSWICK_TRAIL, -24
+	
+	map_attributes BrunswickTrail, BRUNSWICK_TRAIL, $43, NORTH
+	connection north, CitrineCity, CITRINE_CITY, 24
+	
 	map_attributes BrunswickGlade, BRUNSWICK_GLADE, $00, 0 ; Bank 2
 	map_attributes BrunswickGrotto, BRUNSWICK_GROTTO, $00, 0 ; Bank 2
 	map_attributes GarnetCavern1F, GARNET_CAVERN_1F, $00, 0 ; Bank 2
