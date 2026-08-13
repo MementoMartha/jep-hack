@@ -140,7 +140,7 @@
 
 ; Celeste	
 	RGB 31,26,00, 29,18,00
-	RGB 16,14,06, 14,09,07 ; PREDEFPAL_CITRINE
+	RGB 16,14,06, 14,09,07 ; PREDEFPAL_CELESTE
 	RGB 31,18,00, 26,09,00
 	
 ; These're all temporary shush

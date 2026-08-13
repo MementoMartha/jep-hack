@@ -621,17 +621,23 @@ INCLUDE "data/tilesets/lavendercrypt_collision.asm"
 
 SECTION "Tileset Data 16 and a half", ROMX
 
+TilesetCelesteGFX::
 TilesetForestKantoGFX::
 INCBIN "gfx/tilesets/forest_kanto.2bpp.lz"
 
+TilesetCelesteMeta::
 TilesetForestKantoMeta::
 INCBIN "data/tilesets/forest_kanto_metatiles.bin"
 
+TilesetCelesteColl::
 TilesetForestKantoColl::
 INCLUDE "data/tilesets/forest_kanto_collision.asm"
 
 TilesetForestKantoAttr::
 INCBIN "data/tilesets/forest_kanto_attributes.bin"
+
+TilesetCelesteAttr::
+INCBIN "data/tilesets/celeste_attributes.bin"
 
 SECTION "Tileset Data 17", ROMX
 ; moved to make room for new rocky wall colls

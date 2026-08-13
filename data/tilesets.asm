@@ -69,4 +69,5 @@ Tilesets::
 	tileset TilesetShipDeck
 	tileset TilesetPlateau
 	tileset TilesetCitrine
+	tileset TilesetCeleste
 	assert_table_length NUM_TILESETS + 1

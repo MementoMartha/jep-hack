@@ -11,6 +11,12 @@ CelesteHillOutside_MapEvents:
 	def_warp_events
 	warp_event 20, 35, CITRINE_CITY, 3 ; Should be a gate warp
 	warp_event 21, 35, CITRINE_CITY, 3 ; Should be a gate warp
+	warp_event 16, 27, CELESTE_HILL_OUTSIDE, 4 ; Should be a cave warp
+	warp_event 36, 15, CELESTE_HILL_OUTSIDE, 3 ; Should be a cave warp
+	warp_event  2, 13, CELESTE_HILL_OUTSIDE, 6 ; Should be a cave warp
+	warp_event 22,  7, CELESTE_HILL_OUTSIDE, 5 ; Should be a cave warp
+	warp_event 18,  4, CELESTE_HILL, 1
+	warp_event 19,  4, CELESTE_HILL, 2
 	
 	def_coord_events
 

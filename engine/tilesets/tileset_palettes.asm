@@ -22,6 +22,8 @@ LoadSpecialMapPalette:
 	jr z, .mansion_mobile
 	cp TILESET_NIHON_SNOWY
 	jr z, .snowy
+	cp TILESET_CELESTE
+	jr z, .snowy
 	cp TILESET_LAVENDER_CRYPT
 	jr z, .crypt
 	cp TILESET_NIHON_BIRDON
