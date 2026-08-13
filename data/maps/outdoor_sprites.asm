@@ -31,6 +31,7 @@ OutdoorSprites:
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
 	dw CitrineGroupSprites
+	dw CelesteGroupSprites
 	dw OneIslandGroupSprites
 	dw TwoIslandGroupSprites
 	dw ThreeIslandGroupSprites
@@ -54,6 +55,7 @@ OutdoorSprites:
 ; Since these areas aren't done yet, their outdoor sprites will just use Pallet's.
 ; Change as apt later. Right now, it's a space-saver.
 CitrineGroupSprites:
+CelesteGroupSprites:
 PalletGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY

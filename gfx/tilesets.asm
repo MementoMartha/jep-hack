@@ -619,6 +619,8 @@ INCBIN "data/tilesets/lavendercrypt_metatiles.bin"
 TilesetLavenderCryptColl::
 INCLUDE "data/tilesets/lavendercrypt_collision.asm"
 
+SECTION "Tileset Data 16 and a half", ROMX
+
 TilesetForestKantoGFX::
 INCBIN "gfx/tilesets/forest_kanto.2bpp.lz"
 

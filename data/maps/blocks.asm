@@ -1361,6 +1361,9 @@ GarnetCavern2F_Blocks:
 
 CelesteHill_Blocks:
 	INCBIN "maps/CelesteHill.ablk"
+	
+CelesteHillOutside_Blocks:
+	INCBIN "maps/CelesteHillOutside.ablk"
 
 CelesteHillCave_Blocks:
 	INCBIN "maps/CelesteHillCave.ablk"

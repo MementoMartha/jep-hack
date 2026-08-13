@@ -111,12 +111,12 @@ Landmarks:
 	landmark  28,  52, VictoryRoadName
 	landmark  28,  44, Route23Name
 	landmark  28,  36, IndigoPlateauName
-	landmark   0,   0, UnknownName ; Citrine City 
-	landmark   0,   0, UnknownName ; Brunswick Trail 
-	landmark   0,   0, UnknownName ; Brunswick Grotto 
-	landmark   0,   0, UnknownName ; Garnet Cavern 
-	landmark   0,   0, UnknownName ; Celeste Hill Cave 
-	landmark   0,   0, UnknownName ; Celeste Hill
+	landmark  84,  92, CitrineCityName ; Citrine City 
+	landmark  80,  98, BrunswickTrailName ; Brunswick Trail 
+	landmark  77,  96, BrunswickGrottoName ; Brunswick Grotto 
+	landmark  76,  92, GarnetCavernName ; Garnet Cavern 
+	landmark  84,  88, CelesteHillCaveName ; Celeste Hill Cave 
+	landmark  84,  84, CelesteHillName ; Celeste Hill
 	landmark  28,  92, Route26Name
 	landmark  20, 100, Route27Name
 	landmark  12, 100, TohjoFallsName
@@ -288,3 +288,9 @@ SunglowCityName:     db "SUNGLOW¯CITY@"
 BlueForestName:      db "BLUE¯FOREST@"
 AventurineCityName:  db "AVENTURINE¯CITY@"
 WhiteCityName:       db "WHITE¯CITY@"
+CitrineCityName:     db "CITRINE¯CITY@"
+BrunswickTrailName:  db "BRUNSWICK¯TRAIL@"
+BrunswickGrottoName: db "BRUNSWICK¯GROTTO@"
+GarnetCavernName:    db "GARNET¯CAVERN@"
+CelesteHillCaveName: db "CELESTE¯CAVE@"
+CelesteHillName:	 db "CELESTE¯HILL@"

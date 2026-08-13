@@ -757,7 +757,10 @@ ENDM
 	map_attributes GarnetCavern1F, GARNET_CAVERN_1F, $00, 0 ; Bank 2
 	map_attributes GarnetCavern2F, GARNET_CAVERN_1F, $00, 0 ; Bank 2
 	map_attributes GarnetCavernB1F, GARNET_CAVERN_1F, $00, 0 ; Bank 2
-	map_attributes CelesteHill, CELESTE_HILL, $00, 0 ; Bank 2
+	
+	; Celeste
+	map_attributes CelesteHill, CELESTE_HILL, $4D, 0 ; Bank 2
+	map_attributes CelesteHillOutside, CELESTE_HILL_OUTSIDE, $4D, 0 ; Bank 2
 	map_attributes CelesteHillCave, CELESTE_HILL_CAVE, $00, 0 ; Bank 2
 	
 	; Sevii Island Sizzle Reel

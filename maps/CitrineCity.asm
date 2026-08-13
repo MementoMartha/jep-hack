@@ -11,6 +11,7 @@ CitrineCity_MapEvents:
 	def_warp_events
 	warp_event 26, 31, DEBUG_ROOM, 1
 	warp_event 27, 31, DEBUG_ROOM, 1
+	warp_event 23,  5, CELESTE_HILL_OUTSIDE, 1 ; Gate warp. wrong map atm.
 
 	def_coord_events
 

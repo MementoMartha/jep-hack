@@ -559,8 +559,12 @@ ENDM
 	map_const GARNET_CAVERN_1F,				10, 10 ; 5
 	map_const GARNET_CAVERN_2F,				10, 10 ; 6
 	map_const GARNET_CAVERN_B1F,			10, 10 ; 7
-	map_const CELESTE_HILL,					10, 10 ; 8
-	map_const CELESTE_HILL_CAVE,			10, 10 ; 9
+	endgroup
+	
+	newgroup CELESTE ; 27
+	map_const CELESTE_HILL,					11, 11 ; 8
+	map_const CELESTE_HILL_OUTSIDE,			20, 20 ; 9
+	map_const CELESTE_HILL_CAVE,			10, 10 ; 10
 	endgroup
 
 	; Like Citrine, this doesn't have all the houses yet...
