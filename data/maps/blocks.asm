@@ -166,6 +166,7 @@ GuideGentsHouse_Blocks:
 CherrygroveEvolutionSpeechHouse_Blocks:
 Route30BerryHouse_Blocks:
 LakeOfRageTraderHouse_Blocks:
+CitrineTradebackHouse_Blocks:
 	INCBIN "maps/House1.ablk"
 
 SafariZoneFuchsiaGateBeta_Blocks:
@@ -183,6 +184,7 @@ Route5SaffronGate_Blocks:
 ViridianForestViridianGate_Blocks:
 ViridianForestPewterGate_Blocks:
 Route49OldCityGate_Blocks:
+CitrineCelesteGate_Blocks:
 	INCBIN "maps/NorthSouthGate.ablk"
 
 CinnabarIsland_Blocks:
@@ -1074,6 +1076,7 @@ Route10Pokecenter1F_Blocks:
 LavenderPokecenter1F_Blocks:
 SaffronPokecenter1F_Blocks:
 CinnabarPokecenter1F_Blocks:
+CitrinePokecenter1F_Blocks:
 	INCBIN "maps/KantoPokecenter1F.ablk"
 
 KantoPokecenter2F_Blocks:
@@ -1367,3 +1370,6 @@ CelesteHillOutside_Blocks:
 
 CelesteHillCave_Blocks:
 	INCBIN "maps/CelesteHillCave.ablk"
+
+CitrineMart_Blocks:
+	INCBIN "maps/CitrineMart.ablk"

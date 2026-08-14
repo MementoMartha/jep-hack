@@ -9,8 +9,8 @@ CelesteHillOutside_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 20, 35, CITRINE_CITY, 3 ; Should be a gate warp
-	warp_event 21, 35, CITRINE_CITY, 3 ; Should be a gate warp
+	warp_event 20, 35, CITRINE_CELESTE_GATE, 3 ; Should be a gate warp
+	warp_event 21, 35, CITRINE_CELESTE_GATE, 4 ; Should be a gate warp
 	warp_event 16, 27, CELESTE_HILL_CAVE, 1 ; Should be a cave warp
 	warp_event 36, 15, CELESTE_HILL_CAVE, 4 ; Should be a cave warp
 	warp_event  2, 13, CELESTE_HILL_CAVE, 5 ; Should be a cave warp

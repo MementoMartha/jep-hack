@@ -758,7 +758,12 @@ ENDM
 	map_attributes GarnetCavern2F, GARNET_CAVERN_2F, $06, 0 ; Bank 2
 	map_attributes GarnetCavernB1F, GARNET_CAVERN_B1F, $4D, 0 ; Bank 2
 	
+	map_attributes CitrineMart, CITRINE_MART, $00, 0
+	map_attributes CitrinePokecenter1F, CITRINE_POKECENTER_1F, $00, 0
+	map_attributes CitrineTradebackHouse, CITRINE_TRADEBACK_HOUSE, $00, 0
+	
 	; Celeste
+	map_attributes CitrineCelesteGate, CITRINE_CELESTE_GATE, $00, 0
 	map_attributes CelesteHill, CELESTE_HILL, $4D, 0 ; Bank 2
 	map_attributes CelesteHillOutside, CELESTE_HILL_OUTSIDE, $4D, 0 ; Bank 2
 	map_attributes CelesteHillCave, CELESTE_HILL_CAVE, $02, 0 ; Bank 2
