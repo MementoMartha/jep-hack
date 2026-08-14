@@ -761,7 +761,7 @@ ENDM
 	; Celeste
 	map_attributes CelesteHill, CELESTE_HILL, $4D, 0 ; Bank 2
 	map_attributes CelesteHillOutside, CELESTE_HILL_OUTSIDE, $4D, 0 ; Bank 2
-	map_attributes CelesteHillCave, CELESTE_HILL_CAVE, $00, 0 ; Bank 2
+	map_attributes CelesteHillCave, CELESTE_HILL_CAVE, $02, 0 ; Bank 2
 	
 	; Sevii Island Sizzle Reel
 	map_attributes FarawayIslandOutside, FARAWAY_ISLAND_OUTSIDE, $00, 0 ; Bank 2

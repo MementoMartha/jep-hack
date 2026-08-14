@@ -564,7 +564,7 @@ ENDM
 	newgroup CELESTE ; 27
 	map_const CELESTE_HILL,					11, 11 ; 8
 	map_const CELESTE_HILL_OUTSIDE,			20, 20 ; 9
-	map_const CELESTE_HILL_CAVE,			10, 10 ; 10
+	map_const CELESTE_HILL_CAVE,			20, 18 ; 10
 	endgroup
 
 	; Like Citrine, this doesn't have all the houses yet...
