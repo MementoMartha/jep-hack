@@ -755,7 +755,7 @@ ENDM
 	map_attributes BrunswickGlade, BRUNSWICK_GLADE, $00, 0 ; Bank 2
 	map_attributes BrunswickGrotto, BRUNSWICK_GROTTO, $00, 0 ; Bank 2
 	map_attributes GarnetCavern1F, GARNET_CAVERN_1F, $4D, 0 ; Bank 2
-	map_attributes GarnetCavern2F, GARNET_CAVERN_2F, $00, 0 ; Bank 2
+	map_attributes GarnetCavern2F, GARNET_CAVERN_2F, $06, 0 ; Bank 2
 	map_attributes GarnetCavernB1F, GARNET_CAVERN_B1F, $00, 0 ; Bank 2
 	
 	; Celeste

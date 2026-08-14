@@ -10,6 +10,12 @@ GarnetCavern1F_MapEvents:
 
 	def_warp_events
 	warp_event 27, 19, BRUNSWICK_TRAIL, 1
+	warp_event 29,  3, GARNET_CAVERN_2F, 1
+	warp_event 25,  9, GARNET_CAVERN_2F, 2
+	warp_event 20, 11, GARNET_CAVERN_2F, 3
+	warp_event  9,  3, GARNET_CAVERN_2F, 4
+	warp_event  5, 13, GARNET_CAVERN_2F, 5
+	warp_event  3,  5, GARNET_CAVERN_2F, 6
 
 	def_coord_events
 
