@@ -554,8 +554,8 @@ ENDM
 	; This doesn't have all the maps, just the bones
 	map_const CITRINE_CITY,					20, 18 ; 1
 	map_const BRUNSWICK_TRAIL,				32, 14 ; 2
-	map_const BRUNSWICK_GLADE,				10, 10 ; 3
-	map_const BRUNSWICK_GROTTO,				10, 10 ; 4
+	map_const BRUNSWICK_GLADE,				19, 20 ; 3
+	map_const BRUNSWICK_GROTTO,				15, 12 ; 4
 	map_const GARNET_CAVERN_1F,				17, 11 ; 5
 	map_const GARNET_CAVERN_2F,				17, 11 ; 6
 	map_const GARNET_CAVERN_B1F,			17, 11 ; 7

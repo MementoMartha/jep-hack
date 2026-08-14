@@ -9,6 +9,8 @@ BrunswickGrotto_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event 24, 23, BRUNSWICK_GLADE, 3
+	warp_event 25, 23, BRUNSWICK_GLADE, 4
 
 	def_coord_events
 
