@@ -9,6 +9,7 @@ GarnetCavernB1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  5,  8, GARNET_CAVERN_1F, 8
 
 	def_coord_events
 

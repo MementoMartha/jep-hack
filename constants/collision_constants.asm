@@ -110,10 +110,10 @@ DEF COLL_RIGHT_BUOY        EQU $c0 ; unused
 DEF COLL_LEFT_BUOY         EQU $c1 ; unused
 DEF COLL_UP_BUOY           EQU $c2 ; unused
 DEF COLL_DOWN_BUOY         EQU $c3 ; unused
-DEF COLL_DOWN_RIGHT_BUOY   EQU $c4 ; unused
-DEF COLL_DOWN_LEFT_BUOY    EQU $c5 ; unused
-DEF COLL_UP_RIGHT_BUOY     EQU $c6 ; unused
-DEF COLL_UP_LEFT_BUOY      EQU $c7 ; unused
+DEF COLL_DOWN_RIGHT_BUOY   EQU $c4 ; used for fishable lava
+DEF COLL_DOWN_LEFT_BUOY    EQU $c5 ; used for fishable lava
+DEF COLL_UP_RIGHT_BUOY     EQU $c6 ; used for fishable lava
+DEF COLL_UP_LEFT_BUOY      EQU $c7 ; used for fishable lava
 DEF COLL_FF                EQU $ff ; garbage
 
 ; collision data type nybbles

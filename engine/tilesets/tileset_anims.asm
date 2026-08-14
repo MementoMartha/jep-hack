@@ -332,12 +332,13 @@ TilesetCaveVolcanicAnim:
 	dw wTileAnimBuffer, ScrollTileRightLeft
 	dw vTiles2 tile $14, WriteTileFromAnimBuffer
 	dw vTiles2 tile $3C, ReadTileToAnimBuffer
-	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw wTileAnimBuffer, ScrollTileRight
 	dw vTiles2 tile $3C, WriteTileFromAnimBuffer
 	dw vTiles2 tile $2C, ReadTileToAnimBuffer
 	dw wTileAnimBuffer, ScrollTileDown
 	dw wTileAnimBuffer, ScrollTileDown
 	dw vTiles2 tile $2C, WriteTileFromAnimBuffer
+	dw NULL,  AnimateWaterPalette
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  DoneTileAnimation

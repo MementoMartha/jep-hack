@@ -16,6 +16,7 @@ GarnetCavern1F_MapEvents:
 	warp_event  9,  3, GARNET_CAVERN_2F, 4
 	warp_event  5, 13, GARNET_CAVERN_2F, 5
 	warp_event  3,  5, GARNET_CAVERN_2F, 6
+	warp_event  2,  8, GARNET_CAVERN_B1F, 1
 
 	def_coord_events
 

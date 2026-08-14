@@ -558,7 +558,7 @@ ENDM
 	map_const BRUNSWICK_GROTTO,				10, 10 ; 4
 	map_const GARNET_CAVERN_1F,				17, 11 ; 5
 	map_const GARNET_CAVERN_2F,				17, 11 ; 6
-	map_const GARNET_CAVERN_B1F,			10, 10 ; 7
+	map_const GARNET_CAVERN_B1F,			17, 11 ; 7
 	endgroup
 	
 	newgroup CELESTE ; 27
