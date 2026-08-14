@@ -728,3 +728,15 @@ INCLUDE "data/tilesets/citrine_collision.asm"
 
 TilesetCitrineAttr::
 INCBIN "data/tilesets/citrine_attributes.bin"
+
+TilesetCaveVolcanicGFX::
+INCBIN "gfx/tilesets/cave_volcanic.2bpp.lz"
+
+TilesetCaveVolcanicMeta::
+INCBIN "data/tilesets/cave_volcanic_metatiles.bin"
+
+TilesetCaveVolcanicColl::
+INCLUDE "data/tilesets/cave_volcanic_collision.asm"
+
+TilesetCaveVolcanicAttr::
+INCBIN "data/tilesets/cave_volcanic_attributes.bin"

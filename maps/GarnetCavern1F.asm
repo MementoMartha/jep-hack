@@ -9,6 +9,7 @@ GarnetCavern1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event 27, 19, BRUNSWICK_TRAIL, 1
 
 	def_coord_events
 

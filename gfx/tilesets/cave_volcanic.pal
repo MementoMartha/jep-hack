@@ -1,0 +1,40 @@
+; gray
+	RGB 28, 14, 08
+	RGB 15, 11, 11
+	RGB 05, 05, 06
+	RGB 00, 00, 00
+; red
+	RGB 28, 14, 08
+	RGB 26, 03, 04
+	RGB 15, 03, 01
+	RGB 00, 00, 00
+; green (ashy grass)
+	RGB 15, 11, 11
+	RGB 10, 08, 08
+	RGB 05, 05, 06
+	RGB 00, 00, 00
+; water
+	RGB 28, 20, 11
+	RGB 08, 18, 13
+	RGB 06, 13, 14
+	RGB 00, 00, 00
+; yellow
+	RGB 30, 30, 11
+	RGB 19, 11, 07
+	RGB 15, 06, 06
+	RGB 00, 00, 00
+; brown
+	RGB 28, 14, 08
+	RGB 15, 07, 07
+	RGB 08, 04, 05
+	RGB 00, 00, 00
+; roof
+	RGB 19, 09, 14
+	RGB 07, 05, 09
+	RGB 03, 02, 05
+	RGB 00, 00, 00
+; text
+	RGB 31, 31, 16
+	RGB 31, 31, 16
+	RGB 14, 09, 00
+	RGB 00, 00, 00

@@ -28,6 +28,8 @@ LoadSpecialMapPalette:
 	jr z, .crypt
 	cp TILESET_NIHON_BIRDON
 	jr z, .desert
+	cp TILESET_CAVE_VOLCANIC
+	jr z, .volcano
 	jr .do_nothing
 .darkness
 	call LoadDarknessPalette
@@ -84,6 +86,11 @@ LoadSpecialMapPalette:
 	cp NITE_F
 	jr z, .do_nothing
 	call LoadDesertPalette
+	scf
+	ret
+	
+.volcano
+	call LoadVolcanoPalette
 	scf
 	ret
 	
@@ -264,6 +271,16 @@ LoadDarknessPalette:
 
 DarknessPalette:
 INCLUDE "gfx/tilesets/darkness.pal"
+
+LoadVolcanoPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, VolcanoPalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+
+VolcanoPalette:
+INCLUDE "gfx/tilesets/cave_volcanic.pal"
 
 LoadSpecialNPCPalette:
 	call GetMapTimeOfDay

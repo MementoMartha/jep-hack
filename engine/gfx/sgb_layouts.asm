@@ -544,6 +544,9 @@ endr
 	ret
 
 .morn_day
+	ld a, [wMapTileset]
+	cp TILESET_CAVE_VOLCANIC
+	jr z, .volcano
 	ld a, [wEnvironment]
 	cp ROUTE
 	jr z, .route
@@ -625,6 +628,10 @@ endr
 	cp MORN_F
 	jr nz, .dayship
 	ld a, PREDEFPAL_VERMILION_MORN
+	ret
+
+.volcano
+	ld a, PREDEFPAL_VOLCANIC
 	ret
 
 .dayship

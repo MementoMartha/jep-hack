@@ -70,4 +70,5 @@ Tilesets::
 	tileset TilesetPlateau
 	tileset TilesetCitrine
 	tileset TilesetCeleste
+	tileset TilesetCaveVolcanic
 	assert_table_length NUM_TILESETS + 1

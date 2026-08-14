@@ -326,6 +326,22 @@ TilesetLushCaveAnim:
 	dw vTiles2 tile $40, WriteTileFromAnimBuffer
 	dw NULL,  DoneTileAnimation
 
+TilesetCaveVolcanicAnim:
+; Scrolls tile $14, $3C like cave water. 2C like a waterfall.
+	dw vTiles2 tile $14, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $14, WriteTileFromAnimBuffer
+	dw vTiles2 tile $3C, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $3C, WriteTileFromAnimBuffer
+	dw vTiles2 tile $2C, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $2C, WriteTileFromAnimBuffer
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  DoneTileAnimation
+
 TilesetBattleTowerOutsideAnim:
 TilesetHouseAnim:
 TilesetPlayersHouseAnim:
