@@ -32,6 +32,7 @@ OutdoorSprites:
 	dw CherrygroveGroupSprites
 	dw CitrineGroupSprites
 	dw CelesteGroupSprites
+	dw BrunswickGroupSprites
 	dw OneIslandGroupSprites
 	dw TwoIslandGroupSprites
 	dw ThreeIslandGroupSprites
@@ -56,6 +57,7 @@ OutdoorSprites:
 ; Change as apt later. Right now, it's a space-saver.
 CitrineGroupSprites:
 CelesteGroupSprites:
+BrunswickGroupSprites:
 PalletGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY

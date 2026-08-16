@@ -651,18 +651,20 @@ _CGB_MapPals:
 	call .LoadHLBGPaletteIntoDE
 	dec b
 	jr nz, .bg_loop
-; Copy PAL_BG_TEXT and 6 OB palettes
-	ld b, 7
+; Copy PAL_BG_TEXT and 7 OB palettes
+	ld b, 8
 .ob_loop
 	call LoadHLOBPaletteIntoDE
 	dec b
 	jr nz, .ob_loop
-; Copy PAL_OW_TREE and PAL_OW_ROCK
+; Copy PAL_OW_ROCK. PAL_OW_TREE was originally also used but that isn't how it works on actual SGB.
+; TODO: Check how things with PAL_OW_ROCK render on actual SGB hardware. 
 	call .LoadHLBGPaletteIntoDE
-	call .LoadHLBGPaletteIntoDE
+;	call .LoadHLBGPaletteIntoDE
 	ld a, SCGB_MAPPALS
 	ld [wDefaultSGBLayout], a
 	ret
+; SGB hardware could totally render the landmark name sign in its own color. So we should do that. Eventually.
 	
 .LoadHLBGPaletteIntoDE:
 ; morn/day: shades 0, 1, 2, 3 -> 0, 1, 2, 3

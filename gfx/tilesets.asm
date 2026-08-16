@@ -740,3 +740,15 @@ INCLUDE "data/tilesets/cave_volcanic_collision.asm"
 
 TilesetCaveVolcanicAttr::
 INCBIN "data/tilesets/cave_volcanic_attributes.bin"
+
+TilesetSeviiPortGFX::
+INCBIN "gfx/tilesets/sevii_port.2bpp.lz"
+
+TilesetSeviiPortMeta::
+INCBIN "data/tilesets/sevii_port_metatiles.bin"
+
+TilesetSeviiPortColl::
+INCLUDE "data/tilesets/sevii_port_collision.asm"
+
+TilesetSeviiPortAttr::
+INCBIN "data/tilesets/sevii_port_attributes.bin"

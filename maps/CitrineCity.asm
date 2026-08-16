@@ -9,8 +9,8 @@ CitrineCity_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 26, 31, DEBUG_ROOM, 1
-	warp_event 27, 31, DEBUG_ROOM, 1
+	warp_event 26, 31, CITRINE_PORT, 1
+	warp_event 27, 31, DEBUG_ROOM, 1 ; Should also be CITRINE_PORT. This is just for ease of use for the moment.
 	warp_event 23,  5, CITRINE_CELESTE_GATE, 1 ; Gate warp.
 	warp_event 15, 25, CITRINE_MART, 1
 	warp_event 15, 17, CITRINE_POKECENTER_1F, 1

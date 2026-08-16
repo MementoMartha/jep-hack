@@ -71,4 +71,5 @@ Tilesets::
 	tileset TilesetCitrine
 	tileset TilesetCeleste
 	tileset TilesetCaveVolcanic
+	tileset TilesetSeviiPort
 	assert_table_length NUM_TILESETS + 1

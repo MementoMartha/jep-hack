@@ -121,6 +121,7 @@ UnusedTilesetAnim2: ; unreferenced
 	dw NULL,  DoneTileAnimation
 
 TilesetShipDeckAnim: ; This probably uses the same animation stuff?
+TilesetSeviiPortAnim:
 TilesetPortAnim:
 	dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation

@@ -749,6 +749,18 @@ ENDM
 	map_attributes CitrineCity, CITRINE_CITY, $43, SOUTH ; Bank 2
 	connection south, BrunswickTrail, BRUNSWICK_TRAIL, -24
 	
+	map_attributes CitrineMart, CITRINE_MART, $00, 0
+	map_attributes CitrinePokecenter1F, CITRINE_POKECENTER_1F, $00, 0
+	map_attributes CitrineTradebackHouse, CITRINE_TRADEBACK_HOUSE, $00, 0
+	map_attributes CitrinePort, CITRINE_PORT, $00, 0
+	
+	; Celeste
+	map_attributes CitrineCelesteGate, CITRINE_CELESTE_GATE, $00, 0
+	map_attributes CelesteHill, CELESTE_HILL, $4D, 0 ; Bank 2
+	map_attributes CelesteHillOutside, CELESTE_HILL_OUTSIDE, $4D, 0 ; Bank 2
+	map_attributes CelesteHillCave, CELESTE_HILL_CAVE, $02, 0 ; Bank 2
+	
+	; Brunswick
 	map_attributes BrunswickTrail, BRUNSWICK_TRAIL, $43, NORTH
 	connection north, CitrineCity, CITRINE_CITY, 24
 	
@@ -757,16 +769,6 @@ ENDM
 	map_attributes GarnetCavern1F, GARNET_CAVERN_1F, $4D, 0 ; Bank 2
 	map_attributes GarnetCavern2F, GARNET_CAVERN_2F, $06, 0 ; Bank 2
 	map_attributes GarnetCavernB1F, GARNET_CAVERN_B1F, $4D, 0 ; Bank 2
-	
-	map_attributes CitrineMart, CITRINE_MART, $00, 0
-	map_attributes CitrinePokecenter1F, CITRINE_POKECENTER_1F, $00, 0
-	map_attributes CitrineTradebackHouse, CITRINE_TRADEBACK_HOUSE, $00, 0
-	
-	; Celeste
-	map_attributes CitrineCelesteGate, CITRINE_CELESTE_GATE, $00, 0
-	map_attributes CelesteHill, CELESTE_HILL, $4D, 0 ; Bank 2
-	map_attributes CelesteHillOutside, CELESTE_HILL_OUTSIDE, $4D, 0 ; Bank 2
-	map_attributes CelesteHillCave, CELESTE_HILL_CAVE, $02, 0 ; Bank 2
 	
 	; Sevii Island Sizzle Reel
 	map_attributes FarawayIslandOutside, FARAWAY_ISLAND_OUTSIDE, $00, 0 ; Bank 2

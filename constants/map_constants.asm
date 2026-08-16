@@ -553,22 +553,26 @@ ENDM
 	newgroup CITRINE ; 27
 	; This doesn't have all the maps, just the bones
 	map_const CITRINE_CITY,					20, 18 ; 1
+	map_const CITRINE_MART,					 4,  4 ; 8
+	map_const CITRINE_POKECENTER_1F,		 5,  4 ; 9
+	map_const CITRINE_TRADEBACK_HOUSE,		 4,  4 ; 10
+	map_const CITRINE_PORT,					10,  9 ; 11
+	endgroup
+	
+	newgroup CELESTE
+	map_const CITRINE_CELESTE_GATE,			 5,  4 ; 1
+	map_const CELESTE_HILL,					11, 11 ; 2
+	map_const CELESTE_HILL_OUTSIDE,			20, 20 ; 3
+	map_const CELESTE_HILL_CAVE,			20, 18 ; 4
+	endgroup
+	
+	newgroup BRUNSWICK
 	map_const BRUNSWICK_TRAIL,				32, 14 ; 2
 	map_const BRUNSWICK_GLADE,				19, 20 ; 3
 	map_const BRUNSWICK_GROTTO,				15, 12 ; 4
 	map_const GARNET_CAVERN_1F,				17, 11 ; 5
 	map_const GARNET_CAVERN_2F,				17, 11 ; 6
 	map_const GARNET_CAVERN_B1F,			17, 11 ; 7
-	map_const CITRINE_MART,					 4,  4 ; 8
-	map_const CITRINE_POKECENTER_1F,		 5,  4 ; 9
-	map_const CITRINE_TRADEBACK_HOUSE,		 4,  4 ; 10
-	endgroup
-	
-	newgroup CELESTE ; 27
-	map_const CITRINE_CELESTE_GATE,			 5,  4 ; 1
-	map_const CELESTE_HILL,					11, 11 ; 2
-	map_const CELESTE_HILL_OUTSIDE,			20, 20 ; 3
-	map_const CELESTE_HILL_CAVE,			20, 18 ; 4
 	endgroup
 
 	; Like Citrine, this doesn't have all the houses yet...

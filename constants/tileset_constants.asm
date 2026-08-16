@@ -59,6 +59,7 @@
 	const TILESET_CITRINE              ; 39
 	const TILESET_CELESTE              ; 3A
 	const TILESET_CAVE_VOLCANIC        ; 3B
+	const TILESET_SEVII_PORT 	       ; 3C
 DEF NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size

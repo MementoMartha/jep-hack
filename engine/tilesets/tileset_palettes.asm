@@ -30,6 +30,8 @@ LoadSpecialMapPalette:
 	jr z, .desert
 	cp TILESET_CAVE_VOLCANIC
 	jr z, .volcano
+	cp TILESET_SEVII_PORT
+	jr z, .snowy
 	jr .do_nothing
 .darkness
 	call LoadDarknessPalette
@@ -81,7 +83,7 @@ LoadSpecialMapPalette:
 	ret
 	
 .desert
-	ld a, [wTimeOfDay]
+	ld a, [wTimeOfDayPal]
 	and $7
 	cp NITE_F
 	jr z, .do_nothing
@@ -183,7 +185,11 @@ MansionPalette2:
 INCLUDE "gfx/tilesets/mansion_2.pal"
 
 LoadSnowyPalette:
-	ld a, [wTimeOfDay]
+	ld a, [wEnvironment]
+	and $7
+	cp INDOOR ; Hall of Fame
+	jr z, .morn_indoor
+	ld a, [wTimeOfDayPal]
 	and $7
 	cp NITE_F
 	jr z, .nite
@@ -192,7 +198,7 @@ LoadSnowyPalette:
 	cp DUSK_F
 	jr z, .dusk
 	scf
-;morn
+.morn_indoor
 	ld a, BANK(wBGPals1)
 	ld de, wBGPals1
 	ld hl, SnowyMornPalette

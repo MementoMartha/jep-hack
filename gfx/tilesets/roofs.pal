@@ -139,8 +139,13 @@
 	RGB 31,18,00, 26,09,00
 
 ; Celeste	
+	RGB 21,21,21, 13,13,13
+	RGB 11,11,19, 07,07,12 ; PREDEFPAL_CELESTE
+	RGB 24,17,17, 14,11,13
+	
+; Brunswick. This can just be a copy of Citrine, nothing here will actually use the roof colors.
 	RGB 31,26,00, 29,18,00
-	RGB 16,14,06, 14,09,07 ; PREDEFPAL_CELESTE
+	RGB 16,14,06, 14,09,07 ; PREDEFPAL_CITRINE
 	RGB 31,18,00, 26,09,00
 	
 ; These're all temporary shush

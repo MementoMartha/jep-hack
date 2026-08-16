@@ -1373,3 +1373,6 @@ CelesteHillCave_Blocks:
 
 CitrineMart_Blocks:
 	INCBIN "maps/CitrineMart.ablk"
+	
+CitrinePort_Blocks:
+	INCBIN "maps/SeagallopPort.ablk"
