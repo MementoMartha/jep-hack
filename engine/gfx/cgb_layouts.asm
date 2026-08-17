@@ -663,8 +663,13 @@ _CGB_MapPals:
 ;	call .LoadHLBGPaletteIntoDE
 	ld a, SCGB_MAPPALS
 	ld [wDefaultSGBLayout], a
+; SGB hardware could totally render the landmark name sign in its own color. So we should do that.
+	ld a, PREDEFPAL_LANDMARK_SIGN
+	call GetPredefPal
+	ld de, wBGPals1 + (8 * 7) ; bytes per palette * bg palette number? ...Is this a normal way to code this? who gives a shit. Zetacode ahoy.
+	call LoadHLPaletteIntoDE
 	ret
-; SGB hardware could totally render the landmark name sign in its own color. So we should do that. Eventually.
+
 	
 .LoadHLBGPaletteIntoDE:
 ; morn/day: shades 0, 1, 2, 3 -> 0, 1, 2, 3
