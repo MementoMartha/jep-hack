@@ -621,10 +621,10 @@ ENDM
 	
 	newgroup SIX_ISLAND ; 33
 	map_const SIX_ISLAND,							10, 18 ; 1
-	map_const WATER_PATH,							10, 45 ; 2
-	map_const RUIN_VALLEY,							10, 10 ; 3
+	map_const WATER_PATH,							10, 27 ; 2
+	map_const RUIN_VALLEY,							30, 18 ; 3
 	map_const DOTTED_HOLE,							10, 10 ; 4
-	map_const GREEN_PATH,							10, 10 ; 5
+	map_const GREEN_PATH,							30, 9  ; 5
 	map_const PATTERN_BUSH,							10, 10 ; 6
 	map_const OUTCAST_ISLAND,						10, 10 ; 7
 	map_const ALTERING_CAVE,						18, 15 ; 8

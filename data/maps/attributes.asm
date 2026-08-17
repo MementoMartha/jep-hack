@@ -814,11 +814,22 @@ ENDM
 	map_attributes ResortGorgeous, RESORT_GORGEOUS, $07, 0
 	map_attributes LostCave, LOST_CAVE, $00, 0
 	
-	map_attributes SixIsland, SIX_ISLAND, $00, 0
-	map_attributes WaterPath, WATER_PATH, $00, 0
-	map_attributes RuinValley, RUIN_VALLEY, $00, 0
+	map_attributes SixIsland, SIX_ISLAND, $07, EAST
+	connection east, WaterPath, WATER_PATH, -8
+	
+	map_attributes WaterPath, WATER_PATH, $07, NORTH | SOUTH | WEST 
+	connection north, GreenPath, GREEN_PATH, -19
+	connection south, RuinValley, RUIN_VALLEY, -20
+	connection west, SixIsland, SIX_ISLAND, 8
+	
+	map_attributes RuinValley, RUIN_VALLEY, $09, NORTH
+	connection north, WaterPath, WATER_PATH, 20
+	
 	map_attributes DottedHole, DOTTED_HOLE, $00, 0
-	map_attributes GreenPath, GREEN_PATH, $00, 0
+	map_attributes GreenPath, GREEN_PATH, $07, SOUTH ; NORTH | SOUTH
+	connection south, WaterPath, WATER_PATH, 19
+	
+	
 	map_attributes PatternBush, PATTERN_BUSH, $00, 0
 	map_attributes OutcastIsland, OUTCAST_ISLAND, $00, 0
 	map_attributes AlteringCave, ALTERING_CAVE, $00, 0
