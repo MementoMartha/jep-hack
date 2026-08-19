@@ -206,16 +206,16 @@ QuietCave_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 47, 30, ROUTE_49, 1
-	warp_event 47, 31, ROUTE_49, 2
-	warp_event  7,  1, ROUTE_49_2, 1
-	warp_event  7,  1, ROUTE_49_2, 2
+	warp_event 45, 29, ROUTE_49, 1
+	warp_event 45, 29, ROUTE_49, 2
+	warp_event  6,  4, ROUTE_49_2, 1
+	warp_event  7,  4, ROUTE_49_2, 2
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 47, 28, BGEVENT_READ, Route49Sign1
-	bg_event  9,  2, BGEVENT_READ, Route49Sign2
+	bg_event 43, 28, BGEVENT_READ, Route49Sign1
+	bg_event  5,  5, BGEVENT_READ, Route49Sign2
 
 	def_object_events
 	object_event 41, 28, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, QuietCaveBoy1, -1

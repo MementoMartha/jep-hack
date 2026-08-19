@@ -272,8 +272,8 @@ SilentHills_MapEvents:
 	warp_event  3, 12, SILVERS_HOUSE, 1
 
 	def_coord_events
-	coord_event  1,  9, SCENE_SILENT_HILLS_BLUE, SilentHillsBlue1
-	coord_event  1,  8, SCENE_SILENT_HILLS_BLUE, SilentHillsBlue2
+	coord_event  1,  10, SCENE_SILENT_HILLS_BLUE, SilentHillsBlue1	; These have been nudged out of the way for the moment for testing things. -Zeta
+	coord_event  1,  7, SCENE_SILENT_HILLS_BLUE, SilentHillsBlue2
 
 	def_bg_events
 	bg_event  8,  4, BGEVENT_READ, SilentHillsSign1
