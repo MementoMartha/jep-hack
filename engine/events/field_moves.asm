@@ -24,11 +24,11 @@ BlindingFlash:
 ShakeHeadbuttTree:
 	farcall ClearSpriteAnims
 	
-;	Do we have specific tilesets we need to check for? (we will.) Add them here, so they override the region-based check.
+;	Do we have specific tilesets we need to check for? Add them here, so they override the region-based check.
 
-;	ld de, HeadbuttTreeKantoGFX ; kanto tree frames
-;	ld a, [wMapTileset]
-;	cp TILESET_KANTO
+	ld a, [wMapTileset]
+	cp TILESET_NIHON_OLD
+	jp z, .johto_tree_frames
 
 ;	Checks relying on the region to get the headbutt tree graphic go below here. Later regions should be before earlier ones.
 	push bc	; Not sure if needed, this is just a safety precaution.
@@ -49,6 +49,7 @@ ShakeHeadbuttTree:
 	cp KANTO_LANDMARK	; Are we in kanto?
 	jp nc, .tree_frames_determined	; then we know which tree frames we need.
 
+.johto_tree_frames
 	ld de, HeadbuttTreeGFX ; johto tree frames
 .tree_frames_determined
 	ld hl, vTiles0 tile FIELDMOVE_TREE

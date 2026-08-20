@@ -291,20 +291,63 @@ INCLUDE "gfx/tilesets/cave_volcanic.pal"
 LoadSpecialNPCPalette:
 	call GetMapTimeOfDay
 	bit IN_DARKNESS_F, a
-	jr z, .do_nothing
+	jr z, .not_darkness
 	ld a, [wStatusFlags]
 	bit STATUSFLAGS_FLASH_F, a
-	jr nz, .do_nothing
+	jr nz, .not_darkness
 
 ;darkness
 	call LoadNPCDarknessPalette
 	scf
 	ret
+	
+.not_darkness
+	ld a, [wMapTileset]
+	cp TILESET_NIHON_OLD
+	jr z, .browngrass
 
 .do_nothing
 	and a
 	ret
 
+.browngrass
+	ld a, [wTimeOfDayPal]
+	and $7
+	cp NITE_F
+	jr z, .nite
+	cp DAY_F
+	jr z, .day
+	cp DUSK_F
+	jr z, .dusk
+	scf
+; morn
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCBrownGrassPaletteMorn
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+.day
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCBrownGrassPaletteDay
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+.nite
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCBrownGrassPaletteNite
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+.dusk
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCBrownGrassPaletteDusk
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+
+NPCBrownGrassPalette:
+INCLUDE "gfx/overworld/npc_sprites_browngrass.pal"
+	
 LoadNPCDarknessPalette:
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
