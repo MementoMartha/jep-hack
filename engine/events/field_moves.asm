@@ -30,7 +30,7 @@ ShakeHeadbuttTree:
 ;	ld a, [wMapTileset]
 ;	cp TILESET_KANTO
 
-;	Checks relying on the region to get the headbutt tree graphic go below here.
+;	Checks relying on the region to get the headbutt tree graphic go below here. Later regions should be before earlier ones.
 	push bc	; Not sure if needed, this is just a safety precaution.
 	
 	ld a, [wMapGroup]	; Setup to check the world map
@@ -40,6 +40,10 @@ ShakeHeadbuttTree:
 	call GetWorldMapLocation
 	
 	pop bc	; Not sure if needed, this is just a safety precaution.
+	
+	ld de, HeadbuttTreeNihonGFX ; standard nihon tree frames
+	cp NIHON_LANDMARK	; Are we in nihon?
+	jp nc, .tree_frames_determined	; then we know which tree frames we need.
 	
 	ld de, HeadbuttTreeKantoGFX ; kanto tree frames
 	cp KANTO_LANDMARK	; Are we in kanto?
@@ -100,6 +104,9 @@ INCBIN "gfx/overworld/headbutt_tree.2bpp"
 HeadbuttTreeKantoGFX:
 INCBIN "gfx/overworld/headbutt_tree_kanto.2bpp"
 
+HeadbuttTreeNihonGFX:
+INCBIN "gfx/overworld/headbutt_tree_nihon.2bpp"
+
 HideHeadbuttTree:
 	xor a
 	ldh [hBGMapMode], a
@@ -118,6 +125,11 @@ HideHeadbuttTree:
 	ld a, [wMapTileset]
 	cp TILESET_KANTO
 	ld a, $2c ; grass tile
+	jr z, .replacement_tile_determined
+	
+	ld a, [wMapTileset]
+	cp TILESET_LUSHCAVE
+	ld a, $11 ; grass tile
 	jr z, .replacement_tile_determined
 
 	ld a, $05 ; grass tile	
