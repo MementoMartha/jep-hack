@@ -145,7 +145,7 @@ ENDM
 	map_attributes SilverCaveOutside, SILVER_CAVE_OUTSIDE, $2c, EAST
 	connection east, Route28, ROUTE_28, 9
 
-	map_attributes Route26, ROUTE_26, $05, WEST
+	map_attributes Route26, ROUTE_26, $90, WEST
 	connection west, Route27, ROUTE_27, 45
 
 	map_attributes Route27, ROUTE_27, $35, WEST | EAST

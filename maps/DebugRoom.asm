@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, CORSOLAG
+	getmonname STRING_BUFFER_3, TOTARTLE
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke CORSOLAG, 37, RARE_CANDY
+	givepoke TOTARTLE, 47, RARE_CANDY
 	closetext
 	end
 
