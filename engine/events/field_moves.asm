@@ -23,11 +23,30 @@ BlindingFlash:
 
 ShakeHeadbuttTree:
 	farcall ClearSpriteAnims
-	ld de, CutGrassGFX
-	ld hl, vTiles0 tile FIELDMOVE_GRASS
-	lb bc, BANK(CutGrassGFX), 4
-	call Request2bpp
-	ld de, HeadbuttTreeGFX
+	
+;	Do we have specific tilesets we need to check for? (we will.) Add them here, so they override the region-based check.
+
+;	ld de, HeadbuttTreeKantoGFX ; kanto tree frames
+;	ld a, [wMapTileset]
+;	cp TILESET_KANTO
+
+;	Checks relying on the region to get the headbutt tree graphic go below here.
+	push bc	; Not sure if needed, this is just a safety precaution.
+	
+	ld a, [wMapGroup]	; Setup to check the world map
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	
+	pop bc	; Not sure if needed, this is just a safety precaution.
+	
+	ld de, HeadbuttTreeKantoGFX ; kanto tree frames
+	cp KANTO_LANDMARK	; Are we in kanto?
+	jp nc, .tree_frames_determined	; then we know which tree frames we need.
+
+	ld de, HeadbuttTreeGFX ; johto tree frames
+.tree_frames_determined
 	ld hl, vTiles0 tile FIELDMOVE_TREE
 	lb bc, BANK(HeadbuttTreeGFX), 8
 	call Request2bpp
@@ -78,6 +97,9 @@ ShakeHeadbuttTree:
 HeadbuttTreeGFX:
 INCBIN "gfx/overworld/headbutt_tree.2bpp"
 
+HeadbuttTreeKantoGFX:
+INCBIN "gfx/overworld/headbutt_tree_kanto.2bpp"
+
 HideHeadbuttTree:
 	xor a
 	ldh [hBGMapMode], a
@@ -92,7 +114,14 @@ HideHeadbuttTree:
 	ld h, [hl]
 	ld l, a
 
-	ld a, $05 ; grass block
+	; Check the tileset to get the correct tile underneath the headbutt tree graphic
+	ld a, [wMapTileset]
+	cp TILESET_KANTO
+	ld a, $2c ; grass tile
+	jr z, .replacement_tile_determined
+
+	ld a, $05 ; grass tile	
+.replacement_tile_determined
 	ld [hli], a
 	ld [hld], a
 	ld bc, SCREEN_WIDTH

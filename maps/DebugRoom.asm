@@ -211,6 +211,7 @@ DebugItemScript:
 	giveitem HELIX_FOSSIL, 2
 	giveitem OLD_AMBER, 2
 	giveitem COIN_CASE
+	giveitem TM_HEADBUTT, 99
 ;	giveitem HM_STRONG_ARM
 ;	giveitem HM_WATER_SPORT
 	givecoins 2500
