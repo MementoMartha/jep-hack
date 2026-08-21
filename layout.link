@@ -73,7 +73,7 @@ ROMX $11
 	"bank11"
 ROMX $12
 	"Crystal Features 1"
-	"Egg Moves 2"
+	;"Egg Moves 2" ; hopefully commenting this out is fine...?
 	
 ROMX $13
 	"bank13"

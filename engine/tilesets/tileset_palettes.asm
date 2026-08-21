@@ -305,6 +305,10 @@ LoadSpecialNPCPalette:
 	ld a, [wMapTileset]
 	cp TILESET_NIHON_OLD
 	jr z, .browngrass
+	cp TILESET_NIHON_SNOWY
+	jp z, LoadNPCsnowygrassPal
+	cp TILESET_CELESTE
+	jp z, LoadNPCCelestePal
 
 .do_nothing
 	and a
@@ -348,6 +352,82 @@ LoadSpecialNPCPalette:
 NPCBrownGrassPalette:
 INCLUDE "gfx/overworld/npc_sprites_browngrass.pal"
 	
+LoadNPCsnowygrassPal:
+	ld a, [wTimeOfDayPal]
+	and $7
+	cp NITE_F
+	jr z, .nite
+	cp DAY_F
+	jr z, .day
+	cp DUSK_F
+	jr z, .dusk
+	scf
+; morn
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCSnowyPaletteMorn
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+.day
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCSnowyPaletteDay
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+.nite
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCSnowyPaletteNite
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+.dusk
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCSnowyPaletteDusk
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+
+NPCSnowyPalette:
+INCLUDE "gfx/overworld/npc_sprites_snowy.pal"
+	
+LoadNPCCelestePal:
+	ld a, [wTimeOfDayPal]
+	and $7
+	cp NITE_F
+	jr z, .nite
+	cp DAY_F
+	jr z, .day
+	cp DUSK_F
+	jr z, .dusk
+	scf
+; morn
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCCelPaletteMorn
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+.day
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCCelPaletteDay
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+.nite
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCCelPaletteNite
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+.dusk
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, NPCCelPaletteDusk
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+
+NPCCelestePalette:
+INCLUDE "gfx/overworld/npc_sprites_celeste.pal"
+
 LoadNPCDarknessPalette:
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1

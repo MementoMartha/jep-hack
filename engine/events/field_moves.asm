@@ -24,6 +24,15 @@ BlindingFlash:
 ShakeHeadbuttTree:
 	farcall ClearSpriteAnims
 	
+;	Goddamn. Citrine?? Mapgroup checks?? I hate this and this will be the only thing like it lol
+	ld a, [wMapGroup]
+	cp MAPGROUP_CITRINE
+	jp z, .citrine_tree_frames
+	cp MAPGROUP_CELESTE
+	jp z, .citrine_tree_frames
+	cp MAPGROUP_BRUNSWICK
+	jp z, .citrine_tree_frames
+
 ;	Do we have specific tilesets we need to check for? Add them here, so they override the region-based check.
 
 	ld a, [wMapTileset]
@@ -33,6 +42,8 @@ ShakeHeadbuttTree:
 	jp z, .tropical_tree_frames
 	cp TILESET_SEVII
 	jp z, .tropical_tree_frames
+	cp TILESET_NIHON_SNOWY
+	jp z, .snowy_tree_frames
 
 ;	Checks relying on the region to get the headbutt tree graphic go below here. Later regions should be before earlier ones.
 	push bc	; Not sure if needed, this is just a safety precaution.
@@ -56,7 +67,15 @@ ShakeHeadbuttTree:
 	jp .johto_tree_frames
 	
 .tropical_tree_frames
-	ld de, HeadbuttTreeTropicalGFX ; johto tree frames
+	ld de, HeadbuttTreeTropicalGFX ; tropical tree frames
+	jp .tree_frames_determined
+	
+.snowy_tree_frames
+	ld de, HeadbuttTreeSnowyGFX ; snowy tree frames
+	jp .tree_frames_determined
+
+.citrine_tree_frames
+	ld de, HeadbuttTreeCitrineGFX ; citrine tree frames
 	jp .tree_frames_determined
 
 .johto_tree_frames
@@ -121,6 +140,12 @@ INCBIN "gfx/overworld/headbutt_tree_nihon.2bpp"
 HeadbuttTreeTropicalGFX:
 INCBIN "gfx/overworld/headbutt_tree_tropic.2bpp"
 
+HeadbuttTreeSnowyGFX:
+INCBIN "gfx/overworld/headbutt_tree_snowy.2bpp"
+
+HeadbuttTreeCitrineGFX:
+INCBIN "gfx/overworld/headbutt_tree_citrine.2bpp"
+
 HideHeadbuttTree:
 	xor a
 	ldh [hBGMapMode], a
@@ -145,7 +170,27 @@ HideHeadbuttTree:
 	cp TILESET_LUSHCAVE
 	ld a, $11 ; grass tile
 	jr z, .replacement_tile_determined
+	
+	ld a, [wMapTileset]
+	cp TILESET_NIHON_SNOWY
+	ld a, $00 ; grass tile
+	jr z, .replacement_tile_determined
+	
+	ld a, [wMapTileset]
+	cp TILESET_CITRINE
+	ld a, $2c ; grass tile
+	jr z, .replacement_tile_determined
+	
+	ld a, [wMapTileset]
+	cp TILESET_FOREST_KANTO	; the citrine trees are in the second half of the tileset. apparently this makes it so that the tile has to be the same in both halves of the tileset. Whatever, man.
+	ld a, $4c ; grass tile
+	jr z, .replacement_tile_determined
 
+	ld a, [wMapTileset]
+	cp TILESET_CELESTE	; SIGH.
+	ld a, $4c ; grass tile
+	jr z, .replacement_tile_determined
+	
 	ld a, $05 ; grass tile	
 .replacement_tile_determined
 	ld [hli], a
