@@ -133,4 +133,5 @@ Music:
 	dba Music_SixIsland
 	dba Music_Stadium2TeamSelect
 	dba Music_MtMoonCrater
+	dba Music_NorthernCave
 	assert_table_length NUM_MUSIC_SONGS
