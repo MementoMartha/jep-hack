@@ -126,7 +126,7 @@ $(foreach obj, $(pokecrystal_vc_obj), $(eval $(call DEP,$(obj),$(obj:_vc.o=.asm)
 endif
 
 
-pokecrystal_opt         = -Cjv -t PM_CRYSTAL -i BYTE -n 0 -k 01 -l 0x33 -m 0x1b -r 3 -p 0
+pokecrystal_opt         = -Cjsv -t PM_CRYSTAL -i BYTE -n 0 -k 01 -l 0x33 -m 0x1b -r 3 -p 0
 pokecrystal_vc_opt      = -Cjv -t PM_CRYSTAL -i BYTE -n 0 -k 01 -l 0x33 -m 0x1b -r 3 -p 0
 
 %.gbc: $$(%_obj) layout.link

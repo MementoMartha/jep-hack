@@ -840,8 +840,8 @@ _PushSGBPals:
 	ret
 
 InitSGBBorder:
-	call CheckCGB
-	ret nz
+;	call CheckCGB
+;	ret nz
 
 ; SGB/DMG only
 	di
