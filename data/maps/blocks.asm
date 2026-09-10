@@ -1376,3 +1376,12 @@ CitrineMart_Blocks:
 	
 CitrinePort_Blocks:
 	INCBIN "maps/SeagallopPort.ablk"
+	
+JadeRoute_Blocks:
+	INCBIN "maps/RouteToJade.ablk"
+
+JadeTown_Blocks:
+	INCBIN "maps/JadeTown.ablk"
+
+MtSilver_Blocks:
+	INCBIN "maps/MtSilverExteriorNew.ablk"

@@ -51,6 +51,7 @@ OutdoorSprites:
 	dw BlueForestGroupSprites
 	dw AventurineCityGroupSprites
 	dw WhiteCityGroupSprites
+	dw JadeTownGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
 ; Since these areas aren't done yet, their outdoor sprites will just use Pallet's.
@@ -759,6 +760,7 @@ NavelRockGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 
+JadeTownGroupSprites: ; do these need to be shared? All I know is they're right next to eachother.
 SilentHillsGroupSprites:
 	; 12 non-walking filler sprites
 	db SPRITE_SUICUNE

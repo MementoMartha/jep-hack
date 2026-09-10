@@ -153,6 +153,9 @@ Landmarks:
 	landmark 140, 84, AventurineCityName
 	landmark 108, 108, Route66Name
 	landmark 124, 108, WhiteCityName
+	landmark  92, 100, JadeRouteName
+	landmark  92,  92, JadeTownName
+	landmark  92,  84, MtSilverName
 	assert_table_length NUM_LANDMARKS
 
 NewBarkTownName:     db "NEW BARK¯TOWN@"
@@ -294,3 +297,6 @@ BrunswickGrottoName: db "BRUNSWICK¯GROTTO@"
 GarnetCavernName:    db "GARNET¯CAVERN@"
 CelesteHillCaveName: db "CELESTE¯CAVE@"
 CelesteHillName:	 db "CELESTE¯HILL@"
+JadeRouteName:		 db "ROUTE ???@"
+JadeTownName:		 db "JADE TOWN@"
+MtSilverName:		 db "MT.SILVER@"

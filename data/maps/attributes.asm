@@ -850,9 +850,14 @@ ENDM
 	map_attributes WinnersPathOutside, WINNERS_PATH_OUTSIDE, $05, NORTH
 	connection north, Route66, ROUTE_66, 0
 	
-	map_attributes SilentHills, SILENT_HILLS, $05, EAST | WEST ; Add Prince connections later
+	map_attributes SilentHills, SILENT_HILLS, $05, NORTH | EAST | WEST ; Add Prince connections later
+	connection north, JadeRoute, JADE_ROUTE, 0
 	connection west, Route49, ROUTE_49, 0
 	connection east, Route66, ROUTE_66, 0
+	
+	map_attributes JadeRoute, JADE_ROUTE, $05, NORTH | SOUTH
+	connection north, JadeTown, JADE_TOWN, 0
+	connection south, SilentHills, SILENT_HILLS, 0
 	
 	map_attributes Route49, ROUTE_49, $05, EAST | WEST
 	connection west, Route49_2, ROUTE_49_2, -9
@@ -968,6 +973,13 @@ ENDM
 	
 	map_attributes WhiteCity, WHITE_CITY, $01, 0 ; this is on its own for now. add connections later.
 	map_attributes Route66WhiteCityGate, ROUTE_66_WHITE_CITY_GATE, $00, 0
+	
+	map_attributes JadeTown, JADE_TOWN, $05, NORTH | SOUTH
+	connection north, MtSilver, MT_SILVER, 0
+	connection south, JadeRoute, JADE_ROUTE, 0
+	
+	map_attributes MtSilver, MT_SILVER, $C3, SOUTH
+	connection south, JadeTown, JADE_TOWN, 0
 	
 	map_attributes SinjohRuinsExterior, SINJOH_RUINS_EXTERIOR, $00, 0
 	map_attributes SinjohRuinsInterior, SINJOH_RUINS_EXTERIOR, $00, 0

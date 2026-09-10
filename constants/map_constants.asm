@@ -663,6 +663,7 @@ ENDM
 	map_const ROUTE_49_OLD_CITY_GATE_1F,					5,  4 ; 15
 	map_const ROUTE_49_OLD_CITY_GATE_2F,					4,  3 ; 16
 	map_const BLUE_LAB,									   12, 10 ; 17
+	map_const JADE_ROUTE,								   10,  4 ; 18
 	endgroup
 	
 	newgroup OLD_CITY
@@ -735,6 +736,11 @@ ENDM
 	newgroup WHITE_CITY                                           ; 43
 	map_const WHITE_CITY,                           	   30, 27 ; 1
 	map_const ROUTE_66_WHITE_CITY_GATE,					    5,  4 ; 2
+	endgroup
+	
+	newgroup JADE_TOWN                                           ; 44
+	map_const JADE_TOWN,   	                        	  10,  11 ; 1
+	map_const MT_SILVER,								  10,  13 ; 2
 	endgroup
 	
 DEF NUM_MAP_GROUPS EQU const_value ; 41

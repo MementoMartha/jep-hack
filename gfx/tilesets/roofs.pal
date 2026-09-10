@@ -230,3 +230,8 @@
 	RGB 27,28,31, 24,24,26 ; morn/day
 	RGB 13,12,24, 11,09,22 ; nite
 	RGB 31,20,18, 27,17,15 ; dusk
+
+; group 37 (Jade Town)
+	RGB 02,22,10, 14,16,05 ; morn/day
+	RGB 02,11,10, 07,08,05 ; nite
+	RGB 11,16,09, 14,11,05 ; dusk
