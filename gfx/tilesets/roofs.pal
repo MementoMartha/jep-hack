@@ -235,3 +235,8 @@
 	RGB 02,22,10, 14,16,05 ; morn/day
 	RGB 02,11,10, 07,08,05 ; nite
 	RGB 11,16,09, 14,11,05 ; dusk
+	
+; group 38 (New Mt Silver)
+	RGB 21,21,25, 16,16,16 ; morn/day
+	RGB 13,13,13, 07,07,07 ; nite
+	RGB 24,15,15, 18,11,09 ; dusk

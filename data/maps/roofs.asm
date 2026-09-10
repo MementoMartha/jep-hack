@@ -60,6 +60,7 @@ MapGroupRoofs:
 	db ROOF_NEW_BARK  ; 46 (Aventurine City)
 	db ROOF_NEW_BARK  ; 47 (White City)
 	db ROOF_NEW_BARK  ; 48 (Jade Town)
+	db ROOF_NEW_BARK  ; 49 (New Mt Silver)
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

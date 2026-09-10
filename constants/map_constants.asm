@@ -740,7 +740,10 @@ ENDM
 	
 	newgroup JADE_TOWN                                           ; 44
 	map_const JADE_TOWN,   	                        	  10,  11 ; 1
-	map_const MT_SILVER,								  10,  13 ; 2
+	endgroup
+	
+	newgroup MT_SILVER                                           ; 45
+	map_const MT_SILVER,								  10,  13 ; 1
 	endgroup
 	
 DEF NUM_MAP_GROUPS EQU const_value ; 41
