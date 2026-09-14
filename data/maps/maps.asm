@@ -822,10 +822,10 @@ MapGroup_WhiteCity:
 	
 MapGroup_JadeTown:
 	table_width MAP_LENGTH, MapGroup_JadeTown
-	map JadeTown, TILESET_NIHON_01, TOWN, LANDMARK_JADE_TOWN, MUSIC_MART, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	map JadeTown, TILESET_NIHON_01, TOWN, LANDMARK_JADE_TOWN, MUSIC_INDIGO_PLATEAU, FALSE, PALETTE_AUTO, FISHGROUP_SHORE ; The whole area outside of Mt Silver uses the indigo plateau music in GSC. Should this be changed?
 	assert_table_length NUM_JADE_TOWN_MAPS
 	
 MapGroup_MtSilver:
 	table_width MAP_LENGTH, MapGroup_MtSilver
-	map MtSilver, TILESET_NIHON_01, TOWN, LANDMARK_MT_SILVER, MUSIC_LIGHTHOUSE, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	map MtSilver, TILESET_NIHON_01, TOWN, LANDMARK_MT_SILVER, MUSIC_INDIGO_PLATEAU, FALSE, PALETTE_AUTO, FISHGROUP_SHORE ; See above comment. Should these share music? Should THIS use the Indigo Plateau music?
 	assert_table_length NUM_MT_SILVER_MAPS

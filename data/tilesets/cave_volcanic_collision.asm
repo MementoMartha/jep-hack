@@ -114,3 +114,19 @@
 	tilecoll UP_LEFT_BUOY, UP_RIGHT_BUOY, DOWN_LEFT_BUOY, DOWN_RIGHT_BUOY ; 71
 	tilecoll FLOOR, DOWN_WALL, WALL, CAVE ; 72
 	tilecoll WALL, WALL, WALL, CAVE ; 73
+	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 74
+	tilecoll FLOOR, FLOOR, WALL, WALL ; 75
+	tilecoll LADDER, FLOOR, FLOOR, FLOOR ; 76
+	tilecoll LADDER, FLOOR, FLOOR, FLOOR ; 77
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 78
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 79
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 7a
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 7b
+	tilecoll WALL, WALL, WALL, WALL ; 7c
+	tilecoll WALL, WALL, WALL, WALL ; 7d
+	tilecoll WALL, WALL, WALL, WALL ; 7e
+	tilecoll WALL, WALL, WALL, WALL ; 7f
+	tilecoll WALL, WALL, WALL, WALL ; 80
+	tilecoll WALL, WALL, WALL, WALL ; 81
+	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 82
+	tilecoll WALL, WALL, WALL, WALL ; 83
