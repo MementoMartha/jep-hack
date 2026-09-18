@@ -196,6 +196,7 @@ ENDM
 	map_const SEAFOAM_ISLANDS_B2F,						   10, 10 ; 11
 	map_const SEAFOAM_ISLANDS_B3F,						   10, 10 ; 12
 	map_const SEAFOAM_ISLANDS_B4F,						   10, 10 ; 13
+	map_const CINNABAR_VOLCANO_SUMMIT,					   10, 18 ; Will be 16? Possibly?
 	endgroup
 
 	newgroup CERULEAN                                             ;  7

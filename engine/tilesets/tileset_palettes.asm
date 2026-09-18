@@ -92,6 +92,10 @@ LoadSpecialMapPalette:
 	ret
 	
 .volcano
+	ld a, [wEnvironment]
+	and $7
+	cp ROUTE ; Cinnabar Volcano Summit
+	jr z, .do_nothing
 	call LoadVolcanoPalette
 	scf
 	ret

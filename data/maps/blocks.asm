@@ -1385,3 +1385,6 @@ JadeTown_Blocks:
 
 MtSilver_Blocks:
 	INCBIN "maps/MtSilverExteriorNew.ablk"
+	
+CinnabarVolcanoSummit_Blocks:
+	INCBIN "Maps/CinnabarVolcanoSummit.ablk"
