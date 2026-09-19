@@ -1388,3 +1388,12 @@ MtSilver_Blocks:
 	
 CinnabarVolcanoSummit_Blocks:
 	INCBIN "Maps/CinnabarVolcanoSummit.ablk"
+	
+CinnabarVolcanoFloors_Blocks:
+	INCBIN "Maps/CinnabarVolcanoMainFloors.ablk"
+	
+CinnabarVolcano4F_Blocks:
+	INCBIN "Maps/CinnabarVolcano4F.ablk"
+	
+CinnabarVolcanoB2FGym_Blocks:
+	INCBIN "Maps/CinnabarVolcanoB2FGym.ablk"

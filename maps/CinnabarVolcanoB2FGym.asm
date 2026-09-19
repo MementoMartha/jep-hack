@@ -1,15 +1,15 @@
 	object_const_def
 
-CinnabarVolcanoSummit_MapScripts:
+CinnabarVolcanoB2FGym_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-CinnabarVolcanoSummit_MapEvents:
+CinnabarVolcanoB2FGym_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 11, 31, CINNABAR_VOLCANO_4F, 1
+	warp_event 15, 29, CINNABAR_VOLCANO_FLOORS, 10
 
 	def_coord_events
 

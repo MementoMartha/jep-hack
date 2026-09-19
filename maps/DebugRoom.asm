@@ -422,7 +422,7 @@ DebugRoom_MapEvents:
 	warp_event 33, 33, CITRINE_CITY, 1 ; southeast warp
 	warp_event  5,  3, HAUNTED_HOUSE_FOYER, 1
 	warp_event 34, 11, WINNERS_PATH, 3
-	warp_event  6, 29, CINNABAR_VOLCANO_SUMMIT, 1
+	warp_event  6, 29, CINNABAR_VOLCANO_FLOORS, 1
 
 	def_coord_events
 

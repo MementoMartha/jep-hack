@@ -984,5 +984,8 @@ ENDM
 	map_attributes SinjohRuinsExterior, SINJOH_RUINS_EXTERIOR, $00, 0
 	map_attributes SinjohRuinsInterior, SINJOH_RUINS_EXTERIOR, $00, 0
 	
+	map_attributes CinnabarVolcanoFloors, CINNABAR_VOLCANO_FLOORS, $4D, 0
+	map_attributes CinnabarVolcano4F, CINNABAR_VOLCANO_4F, $06, 0
 	map_attributes CinnabarVolcanoSummit, CINNABAR_VOLCANO_SUMMIT, $1D, 0
+	map_attributes CinnabarVolcanoB2FGym, CINNABAR_VOLCANO_B2F_GYM, $0C, 0
 	
