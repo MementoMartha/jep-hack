@@ -219,6 +219,9 @@ TilesetIcePathAnim:
 	dw NULL,  FlickeringCaveEntrancePalette
 	dw vTiles2 tile $31, WriteTileFromAnimBuffer
 	dw NULL,  FlickeringCaveEntrancePalette
+	dw vTiles2 tile $20, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $20, WriteTileFromAnimBuffer
 	dw NULL,  DoneTileAnimation
 
 TilesetTowerAnim:
@@ -287,12 +290,12 @@ TilesetForestKantoAnim:
 TilesetNihonSnowyAnim:
 	dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
+	dw vTiles2 tile $60, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $60, WriteTileFromAnimBuffer,
 	dw NULL,  AnimateWaterPalette
 	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateFlowerTile
-	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation

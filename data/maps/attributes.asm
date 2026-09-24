@@ -989,3 +989,11 @@ ENDM
 	map_attributes CinnabarVolcanoSummit, CINNABAR_VOLCANO_SUMMIT, $1D, 0
 	map_attributes CinnabarVolcanoB2FGym, CINNABAR_VOLCANO_B2F_GYM, $0C, 0
 	
+	map_attributes MtSilverInterior1F, MT_SILVER_INTERIOR_1F, $09, 0
+	map_attributes MtSilverInterior2F, MT_SILVER_INTERIOR_2F, $09, 0
+	map_attributes MtSilverInterior3F, MT_SILVER_INTERIOR_3F, $02, 0
+	map_attributes MtSilver2FOutside, MT_SILVER_2F_OUTSIDE, $B2, 0
+	map_attributes MtSilver3FOutside, MT_SILVER_3F_OUTSIDE, $25, 0
+	map_attributes MtSilverSummit, MT_SILVER_SUMMIT, $81, 0
+	map_attributes MtSilverItemRooms, MT_SILVER_ITEM_ROOMS, $09, 0
+	

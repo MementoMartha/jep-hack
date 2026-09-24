@@ -1397,3 +1397,24 @@ CinnabarVolcano4F_Blocks:
 	
 CinnabarVolcanoB2FGym_Blocks:
 	INCBIN "Maps/CinnabarVolcanoB2FGym.ablk"
+	
+MtSilverInterior1F_Blocks:
+	INCBIN "Maps/MtSilverInterior1F.ablk"
+	
+MtSilverInterior2F_Blocks:
+	INCBIN "Maps/MtSilverInterior2F.ablk"
+	
+MtSilverInterior3F_Blocks:
+	INCBIN "Maps/MtSilverInterior3F.ablk"
+
+MtSilver2FOutside_Blocks:
+	INCBIN "Maps/MtSilver2FOutside.ablk"
+
+MtSilver3FOutside_Blocks:
+	INCBIN "Maps/MtSilver3FOutside.ablk"
+	
+MtSilverSummit_Blocks:
+	INCBIN "Maps/MtSilverSummit.ablk"
+	
+MtSilverItemRooms_Blocks:
+	INCBIN "Maps/MtSilverItemRooms.ablk"

@@ -1,16 +1,15 @@
 	object_const_def
 
-MtSilver_MapScripts:
+CanyonEntrance_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-MtSilver_MapEvents:
+CanyonEntrance_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 4,  1, MT_SILVER_INTERIOR_1F, 1
-	
+
 	def_coord_events
 
 	def_bg_events

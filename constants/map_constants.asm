@@ -748,6 +748,13 @@ ENDM
 	
 	newgroup MT_SILVER                                           ; 45
 	map_const MT_SILVER,								  10,  13 ; 1
+	map_const MT_SILVER_INTERIOR_1F,					  15,  18 ; 2
+	map_const MT_SILVER_INTERIOR_2F,					  20,  18 ; 3
+	map_const MT_SILVER_INTERIOR_3F,					  15,  18 ; 4
+	map_const MT_SILVER_2F_OUTSIDE,						  25,  10 ; 5
+	map_const MT_SILVER_3F_OUTSIDE,						  15,  18 ; 6
+	map_const MT_SILVER_SUMMIT,							  10,  18 ; 7
+	map_const MT_SILVER_ITEM_ROOMS,						  10,  18 ; 8
 	endgroup
 	
 DEF NUM_MAP_GROUPS EQU const_value ; 41
