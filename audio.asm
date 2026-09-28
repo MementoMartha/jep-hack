@@ -183,6 +183,7 @@ INCLUDE "audio/music/SixIsland.asm"
 INCLUDE "audio/music/Stadium2TeamSelect.asm"
 INCLUDE "audio/music/MtMoonCrater.asm"
 INCLUDE "audio/music/NorthernCave.asm"
+INCLUDE "audio/music/RuddyVolcano.asm"
 
 SECTION "Sound Effects", ROMX
 
