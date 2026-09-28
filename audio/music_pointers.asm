@@ -134,4 +134,5 @@ Music:
 	dba Music_Stadium2TeamSelect
 	dba Music_MtMoonCrater
 	dba Music_NorthernCave
+	dba Music_RuddyVolcano
 	assert_table_length NUM_MUSIC_SONGS
