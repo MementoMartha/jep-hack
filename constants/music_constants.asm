@@ -132,6 +132,7 @@
 	const MUSIC_STADIUM2TEAMSELECT			 ; 7f
 	const MUSIC_MTMOONCRATER				 ; 80			We are into the 80s now WOOOHOOO
 	const MUSIC_NORTHERNCAVE				 ; 81
+	const MUSIC_RUDDYVOLCANO				 ; 82
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for these values (see home/map.asm)
