@@ -775,7 +775,7 @@ SilentHillsGroupSprites:
 	db SPRITE_FISHER
 	db SPRITE_BIG_LAPRAS
 	db SPRITE_BIG_ONIX
-	db SPRITE_SUDOWOODO
+	db SPRITE_RED
 	db SPRITE_RIVAL
 	; 9 walking sprites
 	db SPRITE_COOLTRAINER_M
